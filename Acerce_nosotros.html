@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> <title>GamersInformativos</title>
+   <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico">
+   <link rel="stylesheet" href="css/slideshow.scss">
+   <link rel="stylesheet" href="css/fonts.css">
+</head>
+ <body>
+   <div class="container">
+	
+      <div data-am-fadeshow="next-prev-navigation">
+   
+         <!-- Radio -->
+         <input type="radio" name="css-fadeshow" id="slide-1" />
+         <input type="radio" name="css-fadeshow" id="slide-2" />
+         <input type="radio" name="css-fadeshow" id="slide-3" />
+   
+         <!-- Slides -->
+         <div class="fs-slides">
+            <div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1460500063983-994d4c27756c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2550);">
+               <!-- Add content to images (sample) -->
+               <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                  <h1 style="margin-top: 0; margin-bottom: 0.8vw; font-size: 5vw; font-weight: bold;">CSS Fadeshow</h1>
+                  <p style="font-size: 2vw; font-weight: 100; margin-top: 0;">Easy to implement and use on <strong>your</strong> site!</p>
+               </div>
+            </div>
+            <div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
+            <div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1449057528837-7ca097b3520c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
+         </div>
+   
+         <!-- Quick Navigation -->
+         <div class="fs-quick-nav">
+            <label class="fs-quick-btn" for="slide-1"></label>
+            <label class="fs-quick-btn" for="slide-2"></label>
+            <label class="fs-quick-btn" for="slide-3"></label>
+         </div>
+         
+         <!-- Prev Navigation -->
+         <div class="fs-prev-nav">
+            <label class="fs-prev-btn" for="slide-1"></label>
+            <label class="fs-prev-btn" for="slide-2"></label>
+            <label class="fs-prev-btn" for="slide-3"></label>
+         </div>
+         
+         <!-- Next Navigation -->
+         <div class="fs-next-nav">
+            <label class="fs-next-btn" for="slide-1"></label>
+            <label class="fs-next-btn" for="slide-2"></label>
+            <label class="fs-next-btn" for="slide-3"></label>
+         </div>
+   
+      </div>
+      
+   </div>
+  <!--<ul class="slideshow">
+	<li><span>1</span></li>
+    <li><span>2</span></li>
+    <li><span></span></li>
+	<li><span></span></li>
+	<li><span></span><a class="button" href="https://www.facebook.com/GamerInformaticos-106654271067756/?ref=page_internal">Para mas información </a></li>
+  </ul>
+
+ <style>
+    .slideshow {
+  list-style-type: none;
+ }
+ .button{
+	font-family:'Roboto Mono', sans-serif;
+	text-decoration: none;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 2vmin;
+	display: inline-block;
+	position: relative;
+	border: 3px solid white;
+	box-shadow: -0.5vmin 0.5vmin 0 rgba(white, 0.5);
+	background: transparent;
+	margin-top: 5vmin;
+	mix-blend-mode: lighten;
+	color: white;
+	padding: 2vmin 2vmin 1.8vmin 2vmin;
+	letter-spacing: 0.1em;
+	text-shadow: none;
+	line-height: 1;
+	transform: translate3d(0.5vmin, -0.5vmin, 0);
+	transition: all 100ms linear;}
+    .button:hover{ 
+		transform: translate3d(1vmin, -1vmin, 0);
+		box-shadow: -1vmin 1vmin 0 rgba(white, 0.5);
+		background: white;
+		color: black;
+	}
+	.button:active{ 
+		transform: translate3d(0px, 0px, 0);
+		box-shadow: -0px 0px 0 rgba(white, 0.5);
+	}
+
+
+/** SLIDESHOW **/
+ .slideshow,
+ .slideshow:after { 
+    top: -16px; /*Not sure why I needed this fix*/
+		position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: 0; 
+ }
+
+ .slideshow li span { 
+		position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+ }
+
+
+
+ .slideshow li:nth-child(1) span { 
+    background-image: url("https://www.unac.edu.co/wp-content/uploads/2015/03/10.png"); 
+ }
+ .slideshow li:nth-child(2) span { 
+    background-image: url("imagenes/Jesiel.jpg");
+    animation-delay: 6s; 
+    healt
+ }
+ .slideshow li:nth-child(3) span { 
+    background-image: url("https://okdiario.com/img/2018/11/28/codigo-html-655x368.jpg");
+    animation-delay: 12s; 
+ }
+ .slideshow li:nth-child(4) span { 
+    background-image: url("imagenes/Anthony.jpeg");   
+    animation-delay: 18s; 
+ }
+ .slideshow li:nth-child(5) span { 
+    background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5c00c9963ea913260bb41b0e_powerlines.jpg");
+    animation-delay: 24s; 
+ }
+
+
+
+ @keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+ }
+
+
+ @keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+ }
+
+
+ .no-cssanimations .cb-slideshow li span {
+	opacity: 1;
+ }
+</style>-->
+
+    
+</body>
+</html>
